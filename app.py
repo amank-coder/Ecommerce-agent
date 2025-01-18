@@ -24,6 +24,7 @@ load_dotenv()
 
 google_api_key = os.getenv("GOOGLE_API_KEY")
 tavily_api_key = os.getenv("TAVILY_API_KEY")
+huggingfacehub_api_token = os.getenv("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")
 
 if not google_api_key or not tavily_api_key:
     raise ValueError("API keys are not set in the .env file.")
@@ -75,7 +76,7 @@ def search_tool(query: str) -> str:
 
 
 llm = HuggingFaceEndpoint(
-        huggingfacehub_api_token="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",
+        huggingfacehub_api_token,
         repo_id="mistralai/Mistral-Nemo-Instruct-2407",
         temperature=0.8
     )
