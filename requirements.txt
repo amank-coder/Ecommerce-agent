@@ -1,0 +1,11 @@
+langchain_core 
+langchain_community 
+langchain 
+langgraph 
+typing_extensions 
+typing 
+PyPDF2 
+langchain_google_genai 
+faiss-cpu 
+langchain_huggingface
+IPython
