@@ -74,7 +74,6 @@ def search_tool(query: str) -> str:
 
 # Database setup
 llm = HuggingFaceEndpoint(
-    huggingfacehub_api_token=huggingfacehub_api_token,
     repo_id="mistralai/Mistral-Nemo-Instruct-2407",
     temperature=0.8
 )
